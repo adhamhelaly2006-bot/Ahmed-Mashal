@@ -15,8 +15,8 @@ const EventDetails: React.FC = () => {
       </div>
       <div className="flex flex-col items-center">
         <MapPinIcon className="h-8 w-8 text-emerald-600 mb-2" />
-        <p className="text-lg font-semibold">Layalina Hall</p>
-        <p className="text-md text-gray-500">قاعة ليالينا للاحتفالات</p>
+        <p className="text-lg font-semibold">PERLA (GRAND BABYLION)</p>
+        <p className="text-md text-gray-500">بطريق المحله طنطا</p>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect } from 'react';
 import { TimeLeft } from '../types';
 
@@ -29,14 +28,9 @@ const Countdown: React.FC = () => {
     return () => clearTimeout(timer);
   });
 
-  // FIX: Explicitly use React.ReactElement to avoid relying on the global JSX namespace.
   const timerComponents: React.ReactElement[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval as keyof TimeLeft]) {
-      return;
-    }
-
     timerComponents.push(
       <div key={interval} className="flex flex-col items-center mx-2 sm:mx-4">
         <span className="text-4xl sm:text-5xl font-light text-emerald-700">
